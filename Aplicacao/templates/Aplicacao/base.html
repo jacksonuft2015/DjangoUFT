@@ -1,0 +1,138 @@
+<!DOCTYPE >
+{% load static %}
+<html lang="pt-br">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<base href=".">
+
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title> {% block CECANE/UFT %}{% endblock %} </title>
+
+	<link href="{% static 'Aplicacao/scripts/djimageslider.css'%}" rel="stylesheet" type="text/css">
+	<script src="{% static 'Aplicacao/scripts/jquery.min.js.download'%}" type="text/javascript"></script>
+	<script src="{% static 'Aplicacao/scripts/jquery-noconflict.js.download'%}" type="text/javascript"></script>
+	<script src="{% static 'Aplicacao/scripts/jquery-migrate.min.js.download'%}" type="text/javascript"></script>
+	<script src="{% static 'Aplicacao/scripts/caption.js.download'%}" type="text/javascript"></script>
+	<script src="{% static 'Aplicacao/scripts/jquery.easing.min.js.download'%}" type="text/javascript"></script>
+	<script src="{% static 'Aplicacao/scripts/slider.js.download'%}" type="text/javascript"></script>
+	<script type="text/javascript">
+		jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+	</script>
+
+	<link rel="stylesheet" href="{% static 'Aplicacao/css/general.css'%}" type="text/css">
+	<link rel="stylesheet" href="{% static 'Aplicacao/css/system.css'%}" type="text/css">
+	<link rel="stylesheet" href="{% static 'Aplicacao/css/default.css'%}" type="text/css">
+	<link rel="stylesheet" href="{% static 'Aplicacao/css/layout.css'%}" type="text/css">
+	<link rel="stylesheet" href="{% static 'Aplicacao/css/joomla.css'%}" type="text/css">
+	<link rel="stylesheet" href="{% static 'Aplicacao/css/theme.css'%}" type="text/css" title="normal">
+	<link rel="alternate stylesheet" href="{% static 'Aplicacao/css/contraste.css'%}" type="text/css" title="contraste" disabled="">
+	<link rel="stylesheet" href="{% static 'Aplicacao/css/custom.css'%}" type="text/css" title="normal">
+
+    <style type="text/css">
+		#mainbody{width:100%} #content{width:700px;} #sidebar{width:220px;}
+	</style>
+    <link rel="stylesheet" href="{% static 'Aplicacao/css/style.css'%}" type="text/css">
+
+
+</head>
+<body>
+    <div id="barra-brasil"><div id="wrapper-barra-brasil"><div class="brasil-flag"><a href="https://gov.br/" class="link-barra">Brasil</a></div><nav><ul id="lista-barra-brasil" class="list"><li><a href="https://www2.ufrb.edu.br/cecane/#" id="menu-icon"></a></li><li class="list-item first"><a href="http://www.saude.gov.br/coronavirus" style="color:red;">CORONAVÍRUS (COVID-19)</a></li><li class="list-item"><a href="http://www.simplifique.gov.br/" class="link-barra">Simplifique!</a></li><li class="list-item"><a href="https://www.gov.br/pt-br/participacao-social/" class="link-barra">Participe</a></li><li class="list-item"><a href="http://www.acessoainformacao.gov.br/" class="link-barra">Acesso à informação</a></li><li class="list-item"><a href="http://www.planalto.gov.br/legislacao" class="link-barra">Legislação</a></li><li class="list-item last last-item"><a href="https://gov.br/pt-br/canais-do-executivo-federal" class="link-barra">Canais</a></li></ul></nav><span id="brasil-vlibras"><a class="logo-vlibras" id="logovlibras" href="https://www2.ufrb.edu.br/cecane/#"></a><span class="link-vlibras"><img src="./Centro Colaborador em Alimentação e Nutrição Escolar - CECANE_UFRB_files/vlibras.gif" class="barralazy" data-src="//barra.brasil.gov.br/imagens/vlibras.gif" width="132" height="116">&nbsp;<br>O conteúdo desse portal pode ser acessível em Libras usando o <a href="http://www.vlibras.gov.br/">VLibras</a></span></span></div></div>
+		<ul class="accessibility">
+			<li><a href="" accesskey="M" title="Atalho para o menu">Atalho: Menu Principal</a></li>
+			<li><a href="" accesskey="P" title="Atalho para o pesquisar">Atalho: Pesquisar</a></li>
+			<li><a href="" accesskey="C" title="Atalho para o conteúdo">Atalho: Conteúdo</a></li>
+		</ul>
+		<div id="header">
+			<div class="width">
+				<div class="inside">
+					<div id="header-left">
+						<a title="CECANE/UFT"><img src="{% static 'Aplicacao/imagem/logo.png'%}" id="logo" alt="Centro Colaborador em Alimentação e Nutrição Escolar - CECANE/UFT"></a>
+						<div class="clr"></div>
+					</div>
+					<div id="header-right">
+
+						<div id="search">
+								<div class="inside">
+
+									<form action="" method="post">
+										<div class="search">
+											<input name="searchword" id="mod_search_searchword" maxlength="200" alt="OK" class="inputbox" type="text" size="30" value="Pesquisar..." onblur="if(this.value==&#39;&#39;) this.value=&#39;Pesquisar...&#39;;" onfocus="if(this.value==&#39;Pesquisar...&#39;) this.value=&#39;&#39;;"><input type="submit" value="OK" class="button" onclick="this.form.searchword.focus();">        <div class="clr"></div>
+										</div>
+										<input type="hidden" name="task" value="search">
+										<input type="hidden" name="option" value="com_search">
+										<input type="hidden" name="Itemid" value="101">
+									</form>
+
+									<div class="clr"></div>
+								</div>
+						</div>
+					<div class="clr"></div>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+			<div id="container-inner">
+				<div class="width">
+					<div id="container-inner2">
+						<div id="mainbody">
+
+							{% block content %}
+							{% endblock %}
+
+
+
+							<div id="sidebar">
+								<div class="inside">
+									<div class="moduletable_menu">
+										<h3>Menu</h3>
+										<ul class="nav menu mod-list">
+										<li class="item-101 default current active"><a href="home.html/">Início</a></li><li class="item-203 parent"><a href="sobre.html/">Quem Somos</a></li><li class="item-113 parent"><a href="contato.html/">Contato</a></li><li class="item-186"><a href="equipe.html/">Equipe</a></li><li class="item-188 parent"><a href="galeria.html/">Galeria</a></li><li class="item-205"><a href="parceiros-2.html/">Parceiros</a></li><li class="item-212"><a href="projeto-mais-mercado.html/">Doc. Download</a></li></ul>
+									</div>
+
+								</div>
+							</div>
+							<div class="clr"></div>
+						</div>
+						<div class="clr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div>
+		<div vw="" class="enabled">
+			<div vw-access-button="" class="active">
+				<img class="access-button" data-src="{% static 'Aplicacao/imagem/component-ac.png'%}" alt="Conteúdo acessível em libras usando o VLibras Widget com opções dos Avatares Ícaro ou Hozana." src="{% static 'Aplicacao/imagem/component-ac.png'%}">
+				<img class="pop-up" data-src="{ static'Aplicacao/imagem/popup.png'%}" alt="Conteúdo acessível em libras usando o VLibras Widget com opções dos Avatares Ícaro ou Hozana." src="{% static 'Aplicacao/imagem/popup.png'%}">
+			</div>
+			<div vw-plugin-wrapper="">
+				<div vp="">
+						<div vp-box=""></div>
+						<div vp-message-box=""></div>
+						<div vp-settings=""></div>
+						<div vp-settings-btn=""></div>
+						<div vp-info-screen=""></div>
+						<div vp-dictionary=""></div>
+						<div vp-suggestion-screen=""></div>
+						<div vp-suggestion-button=""></div>
+						<div vp-rate-box=""></div>
+						<div vp-rate-button=""></div>
+						<div vp-controls=""></div>
+						<div vp-change-avatar=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script defer="defer" src="{% static 'Aplicacao/scripts/barra.js.download'%}" type="text/javascript"></script>
+	<script type="text/javascript" src="{% static 'Aplicacao/scripts/md_stylechanger.js.download'%}"></script>
+	<script type="text/javascript" src="{% static 'Aplicacao/scripts/styleswitcher.js.download'%}"></script>
+	<script src="{% static 'Aplicacao/scripts/vlibras-plugin.js.download'%}" type="text/javascript"></script>
+
+</body>
+
+</html>
